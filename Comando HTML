@@ -1,0 +1,17 @@
+<!DOCTYPE html> ---> Informar o tipo de arquivo HTML
+<html lang="pt-br"> ---> Ler no idioma selecionado
+<title>Curso de HTML 5</title> ---> Título do Site
+	h1 >>> Título Principal
+	h2 >>> Subtítulo
+
+[ESTRUTURA BASE]
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso de HTML 5</title>
+</head>
+<body>
+	Olá, Mundo
+</body>
+</html>
