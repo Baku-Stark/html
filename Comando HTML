@@ -3,12 +3,16 @@
 <title>Curso de HTML 5</title> ---> Título do Site
 	h1 >>> Título Principal
 	h2 >>> Subtítulo
+		<h2 style="text-align: center;"></h2> ---> Centralizar subtitulo
 	h3 >>> Por diante
 <br/> ---> "Break Row" quebra a linha do texto
 	-- &nbsp; ---> Non-Breaking Space
 	-- &shy; ---> Soft Hyphen. Burro. Hifenização rápida.
 <p> </p> ---> Parágrafo
+	<p style="text-align: justify;"> </p> ---> Justificar texto (text-indent: 50px;)
 <wbr/> ---> Quebrar a palavra para ficar no enquadro da janela
+<code> </code> ---> Formatar e considerado como código
+
 -----------------------------------------------------------
 [ESTRUTURA BASE]
 <!DOCTYPE html>
@@ -23,9 +27,22 @@
 </html>
 
 -----------------------------------------------------------
+[TIPO DE LETRA]
+
+<span style="font-weight: bold;"> ---> BOLD (Negrito)
+<i> ---> ITALIC (Itálico)
+	<em> ---> Ênfase
+
+<span style="text-decoration: underline;"> ---> Sublinhado
+<span style="text-decoration: line-through;"> ---> Palavra riscada riscada
+
+<sup></sup> ---> Sobreescrito
+<sub></sub> ---> Subreescrito
+
+-----------------------------------------------------------
 [INSERINDO UMA IMAGEM E VÍDEO]
 
-<<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO" alt="ALTURA">
+<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO" alt="ALTURA">
 
 -----------------------------------------------------------
 [SÍMBOLOS ESPECIAIS]
