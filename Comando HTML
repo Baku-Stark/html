@@ -3,7 +3,13 @@
 <title>Curso de HTML 5</title> ---> Título do Site
 	h1 >>> Título Principal
 	h2 >>> Subtítulo
-
+	h3 >>> Por diante
+<br/> ---> "Break Row" quebra a linha do texto
+	-- &nbsp; ---> Non-Breaking Space
+	-- &shy; ---> Soft Hyphen. Burro. Hifenização rápida.
+<p> </p> ---> Parágrafo
+<wbr/> ---> Quebrar a palavra para ficar no enquadro da janela
+-----------------------------------------------------------
 [ESTRUTURA BASE]
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,3 +21,53 @@
 	Olá, Mundo
 </body>
 </html>
+
+-----------------------------------------------------------
+[INSERINDO UMA IMAGEM E VÍDEO]
+
+<<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO" alt="ALTURA">
+
+-----------------------------------------------------------
+[SÍMBOLOS ESPECIAIS]
+
+-- Símbolos de Maior e Menor
+&lt; <
+&gt; >
+&le; ≤ 
+&ge; ≥
+
+-- Símbolos Monetários
+&pound; LIBRA £
+&yen; IENE ¥ 
+&euro; EUROS €
+
+-- Símbolos Padrão de Site
+&copy; Copyright © "C"
+&reg; Marca registrada "R"
+&trade; TM
+
+-- Símbolos Matemáticos
+&percnt; Porcentagem %
+&permil; Pormil ‰ 
+&plus; Soma +
+&minus; Subtração
+&plusmn; Mais ou Menos ±
+&oplus; ⊕ 
+&times; Multiplicação x
+&radic; Raíz Quadrada √ 
+&infin; Infinito ∞ 
+&ne; Diferente ≠
+
+-- Setas
+&larr; Seta para a Esquerda ← 
+&rarr; Seta para a Direita → 
+&uarr; Seta para Cima ↑ 
+&darr; Seta para Baixo ↓ 
+
+-- Nipes de Carta
+&spades; ♠ 
+&clubs; ♣ 
+&hearts; ♥ 
+&diams; ♦
+
+-- Alfabeto Grego
