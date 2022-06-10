@@ -41,8 +41,9 @@
 
 -----------------------------------------------------------
 [INSERINDO UMA IMAGEM E VÍDEO]
-
-<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO" alt="ALTURA">
+--- <figure>
+<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO)" alt="ALTURA">
+<img src="NOME DO ARQUIVO" alt=""/>
 
 -----------------------------------------------------------
 [SÍMBOLOS ESPECIAIS]
