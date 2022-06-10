@@ -88,3 +88,38 @@
 &diams; ♦
 
 -- Alfabeto Grego
+
+
+-----------------------------------------------------------
+[CORES EM HTML E CSS3]
+
+
+>>> FUNDO
+<body style="background-color: cor desejada;"></body>
+-- <body style="background-color: red;"></body>
+-- <body style="background-color: green;"></body>
+-- <body style="background-color: blue;"></body>
+
+>>> LETRA
+<body style="color: cor desejada;"></body>
+-- <body style="color: red;"></body>
+-- <body style="color: green;"></body>
+-- <body style="color: blue;"></body>
+
+>>> FUNDO
+<p style="background-image: url('img_girl.jpg');"> </p>
+
+ <style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style> 
+
+
+<style>
+	body {
+		background-image: url("_imagens/fundo.png");
+	}
+</style>
+
+-----------------------------------------------------------
