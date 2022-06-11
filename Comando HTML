@@ -45,6 +45,22 @@
 <img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO)" alt="ALTURA">
 <img src="NOME DO ARQUIVO" alt=""/>
 
+>>> FUNDO
+<p style="background-image: url('img_girl.jpg');"> </p>
+
+ <style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style> 
+
+
+<style>
+	body {
+		background-image: url("_imagens/fundo.png");
+	}
+</style>
+
 -----------------------------------------------------------
 [SÍMBOLOS ESPECIAIS]
 
@@ -106,21 +122,5 @@
 -- <body style="color: red;"></body>
 -- <body style="color: green;"></body>
 -- <body style="color: blue;"></body>
-
->>> FUNDO
-<p style="background-image: url('img_girl.jpg');"> </p>
-
- <style>
-p {
-  background-image: url('img_girl.jpg');
-}
-</style> 
-
-
-<style>
-	body {
-		background-image: url("_imagens/fundo.png");
-	}
-</style>
 
 -----------------------------------------------------------
