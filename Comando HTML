@@ -13,6 +13,9 @@
 <wbr/> ---> Quebrar a palavra para ficar no enquadro da janela
 <code> </code> ---> Formatar e considerado como código
 
+href >>> Hypertext Reference
+/*   */ >>> Deixar como comentário
+
 -----------------------------------------------------------
 [ESTRUTURA BASE]
 <!DOCTYPE html>
