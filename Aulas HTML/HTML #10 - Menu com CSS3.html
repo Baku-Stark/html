@@ -1,0 +1,61 @@
+Veja como criar um menu suspenso utilizando apenas HTML5 e CSS3 nessa aula do professor Gustavo Guanabara.
+
+A partir do HTML5, a tag NAV é utilizada para criar áreas de navegação. Com o CSS3, podemos configurar posicionamento, cores, efeitos de transição e outros comportamentos. Nessa aula, veremos como transformar uma lista com demarcadores em um menu flutuante para o nosso site.
+
+Para realizar essas configurações, aprenderemos alguns parâmetros de CSS3, como:
+
+Modificar o formato da lista, eliminando os demarcadores com o LIST-STYLE Utilizando o TEXT-TRANSFORM com o valor UPPERCASE, alteramos todas as letras de cada item para maiúsculas, independente da maneira que foram escritas.
+
+Com a configuração DISPLAY com o valor INLINE-BLOCK, você vai conseguir alterar a posição de cada item da lista.
+
+As propriedades BACKGROUND-COLOR e COLOR modificam a cor do objeto
+
+Com o PADDING, vamos configurar o espaço interno de cada objeto, enquanto o MARGIN vai definir o espaço externo de cada um deles.
+
+O POSITION do CSS3, vai configurar qual será a base de movimentação em relação ao seu objeto container. Os valores aceitos são ABSOLUTE e RELATIVE.
+
+As propriedades LEFT e TOP vão configurar a posição do objeto em suas grandezas em pixels para o lado esquerdo e borda superior, respectivamente.
+
+Utilizando a propriedade DISPLAY com o valor NONE, podemos esconder determinados objetos utilizando CSS3.
+
+-----------------------------------------------------------
+{index.html}
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul type="square">
+	<li><a href="index.html">Home</li></a>
+	<li><a href="specs.html">Especificações</li></a>
+	<li><a href="fotos.html">Fotos</li></a>
+	<li><a href="multimidia.html">Multimídia</li></a>
+	<li><a href="fale-conosco.html">Fale conosco</li></a>
+</ol>
+</nav>
+</header>
+-----------------------------------------------------------
+{estilo.css}
+
+/* Formatação do MENU */
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top:-20px;
+	left: 300px;
+}
+
+nav#menu li {
+	display: inline-block;
+	color: blue;
+	background-color: black;
+	padding: 10px;
+	margin: 2px;
+}
+
+nav#menu h1 {
+	display: none;
+}
