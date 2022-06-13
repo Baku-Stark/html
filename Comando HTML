@@ -127,3 +127,18 @@ p {
 -- <body style="color: blue;"></body>
 
 -----------------------------------------------------------
+[ESTRUTURA NAV E LISTA]
+
+<nav></nav>
+
+<ol type="1"(ordem numérica)>
+<ol type="I"(ordem numérica em algarimos romanos)>
+<ol type="Aa"(ordem alfabética)>
+	<li></li>
+</ol>
+
+<ul type="square"(quadrados)>
+<ul type="disc"(circulos brancos)>
+<ul type="circle"(circulos pretos)>
+	<li></li>
+</ul>
