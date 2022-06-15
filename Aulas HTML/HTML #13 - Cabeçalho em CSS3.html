@@ -1,0 +1,34 @@
+Nessa aula, veremos como criar cabeçalhos para sites HTML5 utilizando CSS3 e alguns parâmetros adicionais para realizar uma formatação.
+
+– Os modificadores BORDER-TOP, BORDER-BOTTOM, BORDER-LEFT e BORDER-RIGHT configura linhas em volta do objeto e aceita valores como SOLID, DOTTED, DASHED, etc.
+
+Para carregar imagens via CSS, podemos utilizar o modificador BACKGROUND usando a função URL para carregar o arquivo no fundo dos objetos. Utilizando o parâmetro NO-REPEAT para que ele não repita o objeto.
+
+Para a configuração de texto, utilizaremos FONT-FAMILY, FONT-SIZE, COLOR e TEXT-SHADOW.
+
+Além disso, configuramos os espaços internos e periféricos dos objetos com os parâmetros MARGIN e PADDING e suas variações MARGIN-BOTTOM e MARGIN-TOP.
+
+{estilo.css}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+	font-family: Arial, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	font-family: Arial, sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
