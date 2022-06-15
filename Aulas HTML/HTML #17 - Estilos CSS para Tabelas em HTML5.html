@@ -1,0 +1,59 @@
+Veja como criar estilos de formatação com CSS3 para tabelas feitas em HTML5.
+
+Na aula anterior do Curso de HTML5, fizemos a criação de uma TABLE utilizando parâmetros como COLSPAN e ROWSPAN. Nessa aula, formataremos a tabela criada utilizando CSS3, com modificadores como VERTICAL-ALIGN.
+
+Veja como formatar cada coluna de uma tabela com cores diferentes, utilizando o parâmetro CLASS diferentes para cada coluna..
+
+{index.html}
+
+<h1>Especificações Técnicas</h1>
+<table id="tabela">
+<caption>Tabela Técnica do Google Glass <span>Jun/2022</span></caption>
+
+<tr><td>Tela</td><td id="cont">Resolução equivalente a tela de 25"</td></tr>
+<tr><td rowspan="2">Camera</td><td id="cont"> 5MP para fotos</td></tr>
+<tr><td id="cont">720p para vídeos</td></tr>
+<tr><td rowspan="2">Conectividade</td><td id="cont"> Wi-Fi</td></tr>
+<tr><td id="cont">Bluetooth</td></tr>
+<tr><td>Memória Interna</td><td id="cont"> 12GB</td></tr>
+</table>
+
+{estilo.css}
+
+table#tabela {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela td{
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 10px;
+	color: white;
+	background-color: gray;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabela td#cont{
+	font-weight: normal;
+	color: black;
+	background-color: #D4D4D4;
+	text-align: left;
+}
+
+table#tabela caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabela caption span{
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 5px;
+}
