@@ -18,6 +18,8 @@ href >>> Hypertext Reference
 
 -----------------------------------------------------------
 [ESTRUTURA BASE]
+
+{HTML}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,6 +28,22 @@ href >>> Hypertext Reference
 </head>
 <body>
 	Olá, Mundo
+</body>
+</html>
+
+{JAVA SCRIPT}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Testando JavaScript</h1>
+	<script>
+		alert("Olá, mundo!");
+		document.write("Olá, mundo!")
+	</script>
 </body>
 </html>
 
