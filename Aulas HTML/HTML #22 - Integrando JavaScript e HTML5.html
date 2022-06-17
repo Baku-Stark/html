@@ -1,0 +1,92 @@
+Como juntar JavaScript e HTML5 em uma mesma página. Veja como integrar scripts aos seus códigos estáticos em linguagem HTML.
+
+Usando os métodos ONMOUSEOVER e ONMOUSEOUT do JavaScript para executar um procedimento em script chamado mudaFoto().
+
+{index.html}
+
+<script src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type="square">
+		<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</li></a>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</li></a>
+		<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</li></a>
+		<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</li></a>
+		<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</li></a>
+	</ol>
+	</nav>
+	</header>
+
+
+{specs.html}
+
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Tudo Sobre Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+</head>
+<script src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone" src="_imagens/especificacoes.png"/>
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type="square">
+		<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</li></a>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</li></a>
+		<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</li></a>
+		<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</li></a>
+		<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</li></a>
+	</ol>
+	</nav>
+	</header>
+
+<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+<hgroup>
+<h3>Glass > Especificações</h3>
+<h1>Raio-X no Google Glass</h1>
+<h2>por Wallace De Freitas</h2>
+<h3 class="direita">Atualizado em 08/Junho/2022</h3>
+</hgroup>
+</header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+<img src="_imagens/glass-esquema-marcado.jpg"/>
+
+<footer id="rodape">
+<p>Copyright &copy;2022 - by Wallace de Freitas</p>
+<p> <a href="https://www.instagram.com/wallace_emc2/" target="_blank">Instagram</a> | <a href="https://twitter.com/Walleemc2" target="_blank">Twitter</a></p>
+
+</div>
+</body>
+</html>
+</footer>
+
+
+{funcoes.js}
+
+	function mudaFoto(foto)
+	{
+		document.getElementById("icone").src = foto;
+	}
