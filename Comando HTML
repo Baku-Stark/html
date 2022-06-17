@@ -63,7 +63,7 @@ href >>> Hypertext Reference
 -----------------------------------------------------------
 [INSERINDO UMA IMAGEM E VÍDEO]
 --- <figure>
-<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO)" alt="ALTURA">
+<img src="NOME DO ARQUIVO (JUNTO DA SUA IDENTIFICAÇÃO)" alt="TEXTO ALTERNATIVO">
 <img src="NOME DO ARQUIVO" alt=""/>
 
 >>> FUNDO
