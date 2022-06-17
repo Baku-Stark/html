@@ -160,3 +160,26 @@ p {
 <ul type="circle"(circulos pretos)>
 	<li></li>
 </ul>
+
+-----------------------------------------------------------
+[MOUSE EVENT - js]
+
+onclick="" ---> O evento ocorre quando o usuário clica no elemento
+
+oncontextmenu="" ---> O evento ocorre quando o usuário clica com o botão direito do mouse em um elemento para abrir um menu de contexto
+
+ondblclick="" ---> O evento ocorre quando o usuário clica duas vezes em um elemento
+
+onmousedown="" ---> O evento ocorre quando o usuário pressiona um botão do mouse sobre um elemento
+
+onmouseenter="" ---> O evento ocorre quando o ponteiro é movido para um elemento
+
+onmouseleave="" ---> O evento ocorre quando o ponteiro é movido para fora de um elemento
+
+onmousemove="" ---> O evento ocorre quando o ponteiro está se movendo enquanto está sobre um elemento
+
+onmouseout="" ---> O evento ocorre quando um usuário move o ponteiro do mouse para fora de um elemento ou de um de seus filhos
+
+onmouseover="" ---> O evento ocorre quando o ponteiro é movido para um elemento ou para um de seus filhos
+
+onmouseup="" ---> O evento ocorre quando um usuário libera um botão do mouse sobre um elemento
