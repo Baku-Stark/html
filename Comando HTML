@@ -42,7 +42,7 @@ href >>> Hypertext Reference
 	<h1>Testando JavaScript</h1>
 	<script>
 		alert("Olá, mundo!");
-		document.write("Olá, mundo!")
+		document.write("Olá, mundo!");
 	</script>
 </body>
 </html>
