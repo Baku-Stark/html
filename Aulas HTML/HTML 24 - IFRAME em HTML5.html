@@ -1,0 +1,47 @@
+Imagem em HTML5 e IFRAME usando HTML5 e CSS3.
+
+Veja como adaptar as suas páginas HTML5 ao padrão definido pela sua interface, seguindo o mesmo esquema em todos os documento.
+
+Também vamos inserir uma imagem com a tag IMG, que será utilizada juntamente com um mapa de imagem (na próxima aula).
+
+Veremos também como utilizar IFRAME em HTML5, utilizando os parâmetros NAME e ID. Além disso, faremos configurações de folha de estilo para formatar o IFRAME.
+
+{specs.css}
+
+@charset "UTF-8";
+
+section#conteudo {
+	width: 1000px;
+	margin: auto;
+}
+
+iframe#frame-spec {
+	width: 380px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+	scrollbar-width: none;
+}
+
+iframe#frame-spec::-webkit-scrollbar {
+	display: none;
+}
+
+{specs.html}
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Glass > Especificações</h3>
+				<h1>Raio-X no Google Glass</h1>
+				<h2>por Wallace De Freitas</h2>
+				<h3 class="direita">Atualizado em 08/Junho/2022</h3>
+			</hgroup>
+		</header>
+
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+<section id="conteudo">
+	<img src="_imagens/glass-esquema-marcado.jpg"/>
+	<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+</section>
