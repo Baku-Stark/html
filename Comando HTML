@@ -61,13 +61,20 @@ type="text" ---> Texto
 type="email" ---> E-mail
 type="password" ---> Senha
 type="date" ---> Nascimento
+type="submit" ---> Criar um botão
 
-type="range" ---> Objeto para medição
---- <input type="range" name="tUrg" id="" min="" max="" step="SALTOS"/></p>
+type="image" ---> Inputar uma imagem
+--- <input type="image" name="tEnviar" src="LOCAL DA IMAGEM">
+
+type="color" ---> Caixa de Cor
+--- <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor"/></p>
 
 type="range" ---> Objeto para medição
 --- <input type="range" name="tUrg" id="" min="" max="" step="SALTOS"/></p>
 --- <input type="checkbox" name="tPed" id="cPed"/>
+
+type="radio" (CÍCULO) // type="checkbox" (QUADRADO) ---> Bola de marcação
+---- exemplo: <input type="radio" name="tSexo" id=""> <label for="cMasc">Masculino</label>
 
 type="number" ---> Números
 --- exemplo: <p><label for="">N°: <input type="number" name="tNum" id="" min="0" maax="999"/></label></p>
