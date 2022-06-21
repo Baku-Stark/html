@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Multimídia</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/media.css">
+</head>
+<script src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
 
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone" src="_imagens/multimidia.png"/>
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type="square">
+		<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</li></a>
+		<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</li></a>
+		<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</li></a>
+		<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</li></a>
+		<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</li></a>
+	</ol>
+	</nav>
+	</header>
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Glass > Multimídia</h3>
+				<h1>Sons e Vídeos</h1>
+				<h2>por Wallace De Freitas</h2>
+				<h3 class="direita">Atualizado em 08/Junho/2022</h3>
+			</hgroup>
+		</header>
+
+		<div id="tv-radio">
+			<audio id="msc" controls="controls">
+				<source src="../_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+				<source src="../_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac"/>
+				<source src="../_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>
+				Desculpe, mas não foi possível carregar o áudio.
+			</audio>
+			<video id="movie" controls="controls" poster="_imagens/video-mini03.jpg">
+				<source src="../_media/getting-started.mp4" type="video/mp4"/>
+				<source src="../_media/getting-started.webm" type="video/webm"/>
+				<source src="../_media/getting-started.ogv" type="video/ogg"/>
+				Desculpe, mas não foi possível carregar o vídeo.
+			</video>
+		</div>
+	</article>
+</section>
+<footer id="rodape">
+<p>Copyright &copy;2022 - by Wallace de Freitas</p>
+<p> <a href="https://www.instagram.com/wallace_emc2/" target="_blank">Instagram</a> | <a href="https://twitter.com/Walleemc2" target="_blank">Twitter</a></p>
+
+</div>
+</body>
+</html>
+</footer>
