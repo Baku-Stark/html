@@ -65,11 +65,13 @@ type="date" ---> Nascimento
 type="range" ---> Objeto para medição
 --- <input type="range" name="tUrg" id="" min="" max="" step="SALTOS"/></p>
 
----- exemplo: <input type="radio" name="tSexo" id=""> <label for="cMasc">Masculino</label>
+type="range" ---> Objeto para medição
+--- <input type="range" name="tUrg" id="" min="" max="" step="SALTOS"/></p>
+--- <input type="checkbox" name="tPed" id="cPed"/>
 
 type="number" ---> Números
 --- exemplo: <p><label for="">N°: <input type="number" name="tNum" id="" min="0" maax="999"/></label></p>
-type="radio" ---> Bola de marcação
+
 
 -----------------------------------------------------------
 [TIPO DE LETRA]
