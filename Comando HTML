@@ -48,6 +48,30 @@ href >>> Hypertext Reference
 </html>
 
 -----------------------------------------------------------
+[INSERINDO TEXTO E INPUT's]
+
+{TEXTO}
+<textarea name=""></textarea> ---> Caixa de Texto Maior
+
+
+{TIPOS DE INPUT}
+<input type="Tipo do input" name="NOME DO VALOR (RECOMENDÁVEL UTILILIZAR VALORES DIFERENTES)" size="TAMANHO DA CAIXA" placeholder="TEXTO FANTASMA">
+
+type="text" ---> Texto
+type="email" ---> E-mail
+type="password" ---> Senha
+type="date" ---> Nascimento
+
+type="range" ---> Objeto para medição
+--- <input type="range" name="tUrg" id="" min="" max="" step="SALTOS"/></p>
+
+---- exemplo: <input type="radio" name="tSexo" id=""> <label for="cMasc">Masculino</label>
+
+type="number" ---> Números
+--- exemplo: <p><label for="">N°: <input type="number" name="tNum" id="" min="0" maax="999"/></label></p>
+type="radio" ---> Bola de marcação
+
+-----------------------------------------------------------
 [TIPO DE LETRA]
 
 <span style="font-weight: bold;"> ---> BOLD (Negrito)
@@ -82,6 +106,17 @@ p {
 	}
 </style>
 
+>>> VÍDEO
+{Arquivo}
+<video id="movie" controls="controls" poster="_imagens/video-mini03.jpg">
+	<source src="../_media/getting-started.mp4" type="video/mp4"/>
+	<source src="../_media/getting-started.webm" type="video/webm"/>
+	<source src="../_media/getting-started.ogv" type="video/ogg"/>
+	Desculpe, mas não foi possível carregar o vídeo.
+</video>
+
+{Youtube}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zl5I61QY3Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -----------------------------------------------------------
 [SÍMBOLOS ESPECIAIS]
 
@@ -160,6 +195,14 @@ p {
 <ul type="circle"(circulos pretos)>
 	<li></li>
 </ul>
+
+-----------------------------------------------------------
+[ADICIONANDO LINK]
+
+exemplo
+<a href="link do site desejado" target=""></a>
+-- target "_blank": Abre o link em outra aba do navegador
+-- target "_selfie": Abre o link na mesma aba do navegador
 
 -----------------------------------------------------------
 [MOUSE EVENT - js]
