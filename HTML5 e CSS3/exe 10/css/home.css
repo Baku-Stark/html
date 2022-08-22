@@ -1,0 +1,62 @@
+* {
+    font-family: Helvetica;
+    color: #f0f8ff;
+}
+
+html{
+    background-color: #111111;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-family: Impact;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13pt;
+    color: #111111;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+    color: #111111;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.card{
+    width: 345px;
+    height: 450px;
+    border-radius: 25px 25px 0px 0px;
+    margin-right: 20px;
+    background-color: #f0f8ff;
+}
+
+.card:hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: 1px 1px 5px #f0f8ff67;
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
+
+img{
+    width: 345px;
+    height: 350px;
+    margin-bottom: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+img:hover{
+    cursor: pointer;
+}
