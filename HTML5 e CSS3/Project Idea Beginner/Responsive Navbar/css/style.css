@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Title';
+    src: url("/font/commando.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.navbar{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.navbar h1{
+    padding: 10px;
+    font-family: 'Title', sans-serif;
+    color: #f0f8ff;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20pt;
+    padding: 14px 16px;
+    color: #f2f2f2;
+}
+
+.navbar a:hover{
+    color: #111111;
+    background-color: #3b3b3b;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 90px;
+    height: 1500px;
+}
