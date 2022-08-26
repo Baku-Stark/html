@@ -9,7 +9,7 @@
 h1{
     margin: 10px auto 30px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #f0f8ff;
 }
 
 .container{
@@ -27,8 +27,8 @@ h1{
 
 input{
     font-family: Impact;
-    border: 2px solid #111111;
     border-radius: 15px;
+    border: 2px solid #111111;
 }
 
 input:hover{
