@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contato (Register)</title>
+    <link rel="stylesheet" href="css/stylereg.css">
+</head>
+<body>
+    <div class="form">
+        <form>
+            <h1>Register | <a href="index.html">Login</a></h1>
+            <p>E-mail <abbr title="emailexample@gmail.com">*</abbr></p>
+            <input 
+                type="text" 
+                name="email" 
+                placeholder="Digite seu email"
+            />
+
+            <p>Repetir E-mail</p>
+            <input 
+                type="text" 
+                name="email"
+            />
+            <p>_________________________________</p>
+            <p>Senha <abbr title="a senha deve possuir números, caracteres e caracteres especiais">*</abbr></p>
+            <input 
+                type="password" 
+                name="senha" 
+                placeholder="Digite sua senha"
+            />
+            <p>Repetir Senha</p>
+            <input 
+                type="password" 
+                name="senha" 
+            />
+            <p><span>By creating an account you agree to our <a href="#">Term & Privacy</a>.</span></p>
+            <input type="submit" name="action" value="Registrar"/>
+        </form>
+    </div>
+
+    <script src="js/style.js"></script>
+</body>
+</html>
