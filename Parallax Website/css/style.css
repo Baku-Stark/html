@@ -33,6 +33,7 @@ main{
         transform: translateY(-40px);
     }
 }
+
 /* ------ FOOTER ------ */
 footer{
     width: 100%;
@@ -56,3 +57,4 @@ a{
 a:hover{
     color: #adab14;
 }
+/* ------ FOOTER ------ */
