@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagens/MHAmain.png');
+}
+
+.logo{
+    padding: 150px;
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+}
