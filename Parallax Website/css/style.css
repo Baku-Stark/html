@@ -19,6 +19,18 @@ h1{
     font-family: 'FontLink';
 }
 
+.izuku{
+    text-shadow: 3px 3px 0 #21ad14;
+}
+
+.katsuki{
+    text-shadow: 3px 3px 0 #ee5903;
+}
+
+.shoto{
+    text-shadow: 3px 3px 0 #0384ee;
+}
+
 /* ------ MAIN ------ */
 main{
     width: 100%;
