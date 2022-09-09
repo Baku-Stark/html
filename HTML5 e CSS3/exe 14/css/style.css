@@ -1,0 +1,41 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #494949;
+}
+
+li{
+    padding: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    color: #f0f8ff;
+}
+
+li:hover{
+    background-color: #353535;
+}
+
+li:first-child{
+    margin-left: 0;
+}
+
+a{
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #111111;
+}
+
+main{
+    margin-top: 10px;
+}
+
+section#noticias{
+    padding: 10px;
+    background-color: #8a8a8a;
+}
