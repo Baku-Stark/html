@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+}
+
+.social-media{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-container{
+    padding: 1rem;
+    min-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media-icon{
+    margin: 1rem;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-sheet{
+    bottom: 0;
+    width: 3rem;
+    height: 3rem;
+    font-size: 24px;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: rotateZ(-45deg) skewX(24deg);
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #f0f8ff;
+}
+
+.social-media-icon:first-child > .social-media-sheet{
+    background-color: #4859a2;
+}
+
+.social-media-icon:nth-child(2) > .social-media-sheet{
+    background-color: #58aeec;
+}
+
+.social-media-icon:nth-child(3) > .social-media-sheet{
+    background-color: #0e7daf;
+}
+
+.social-media-icon:nth-child(4) > .social-media-sheet{
+    background-image: linear-gradient(to right, #fed975 , #fa7f1e, #d72976, #9630be, #4f5cd5);
+}
+
+.social-media-icon .social-media-sheet--opacity:first-child{
+    opacity: 0.8;
+}
+
+.social-media-icon .social-media-sheet--opacity:nth-child(2){
+    opacity: 0.2;
+}
+
+.social-media-icon .social-media-sheet--opacity:nth-child(3){
+    opacity: 0.6;
+}
+
+.social-media-icon .social-media-sheet--opacity:nth-child(4){
+    opacity: 0.8;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.social-media-icon:hover > .social-media-sheet{
+    bottom: 28px;
+}
+
+.social-media-icon:hover .social-media-sheet--opacity:first-child {
+    bottom: 22px;
+}
+
+.social-media-icon:hover .social-media-sheet--opacity:nth-child(2) {
+    bottom: 20px;
+}
+
+.social-media-icon:hover .social-media-sheet--opacity:nth-child(3) {
+    bottom: 15px;
+}
+
+.social-media-icon:hover .social-media-sheet--opacity:nth-child(4) {
+    bottom: 8px;
+}
