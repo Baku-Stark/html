@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, Bootstrap!</title>
+    <!-- CSS (BOOTSTRAP) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- ICONS CDN (BOOTSTRAP) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- NAVBAR (BOOTSTRAP) -->
+    <nav class="navbar position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999; width: 100%;">
+        <div class="container-fluid col-11 m-auto ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CARROSSEL (BOOTSTRAP) -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- IMAGEM 1 -->
+            <img src="_images/dashboard 1.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- IMAGEM 2 -->
+            <img src="_images/dashboard 2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <!-- IMAGEM 3 -->
+            <img src="_images/dashboard 3.jfif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CARDS (BOOTSTRAP) -->
+    <div class="card mb-3" id="home">
+        <h2 class="text-center">Conteúdo do site</h2>
+        <img src="_images/download.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este é um MODAL em BOOTSTRAP
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    <div class="card mb-3">
+        <img src="_images/download.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <img src="_images/download.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+    <!-- CONTEÚDO DO SITE (BOOTSTRAP) -->
+    <div class="col-11 m-auto">
+        <h2 class="text-center">Meu Título</h2>
+        <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius dolorem quia et deleniti atque temporibus suscipit maiores sunt labore, officia ipsam esse nobis dignissimos quod. Adipisci reprehenderit expedita impedit quos, aspernatur dolorem non totam et natus quas, ullam autem deserunt optio, voluptas quibusdam iusto repudiandae! Possimus aliquid ad voluptate sed? Tenetur, magnam quidem vitae deleniti aliquam eveniet quod pariatur ipsam sapiente esse minima necessitatibus laboriosam. Eos magnam numquam, temporibus, explicabo vero voluptate adipisci possimus, debitis minima incidunt eum quo facere. Eum mollitia ipsam odit vitae illo! Quas fuga nostrum, vitae exercitationem maiores soluta debitis tempora mollitia, earum quae ad cum. Deserunt ea dolorum eum omnis magnam minus vitae, asperiores veniam suscipit. Nihil, distinctio illum corporis tenetur mollitia laudantium cumque ipsa nostrum reiciendis eligendi possimus pariatur, expedita deleniti nesciunt molestiae. Minima esse rem cum vel consectetur laboriosam! Earum quos eligendi consequatur totam mollitia blanditiis saepe ut nostrum ipsum dignissimos? Exercitationem magnam quaerat delectus, placeat minima suscipit aliquid atque velit expedita voluptas iure deleniti esse ut ratione deserunt non. Possimus, adipisci consequatur. Recusandae deserunt tenetur, ut harum fugit quasi, impedit, rem tempore quos assumenda eveniet eligendi quod vel obcaecati voluptate fuga? Dolor quasi porro harum sequi rerum expedita cupiditate neque provident.
+        </p>
+    </div>
+    <div class="col-11 m-auto" id="contato">
+        <h2 class="text-center">Contato</h2>
+        <div class="m-auto" style="width: 150px;">
+            <a href="http://">
+                <i class="bi bi-whatsapp" 
+                    style=" font-size: 150px;
+                            color: #7fff00;"
+                ></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER DO SITE (BOOTSTRAP) -->
+    <footer class="page-footer font-small blue p-5" style="background-color: #111111;">
+        <div class="text-center">
+            <a href="https://github.com/Baku-Stark">&copy; Copyright - 2022: Wallace (Baku-Stark)</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript (BOOTSTRAP) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
