@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f8ff;
+    background-color: #111111;
+    font-family: 'Impact', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 150px;
+    text-shadow: -3px -3px 0 #00ffff,
+                    3px 3px 0 #dc143c;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-50px);
+    }
+}
