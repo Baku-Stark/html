@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+}
+
+a{
+    font-size: 40px;
+    padding: 40px 80px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: all 1s;
+    border: 3px solid #000000;
+    color: #f0f8ff;
+    font-family: sans-serif;
+}
+
+a::before{
+    content: '✔️ Dia 16';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    transform: translateY(-100%);
+    color: #111111;
+    background-color: #00fffff6;
+}
+
+a:hover::before{
+    transform: translateY(0);
+}
