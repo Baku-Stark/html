@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+.brilho{
+    height: 750;
+    margin: -150px;
+    min-width: 750px;
+    position: relative;
+    transform-origin: right;
+    animation: corMudando 5s linear infinite;
+}
+
+@keyframes corMudando{
+    0%{
+        filter: hue-rotate(360deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.brilho:nth-child(even){
+    transform-origin: left;
+}
+
+.brilho span{
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+}
+
+.brilho span::before{
+    content: '';
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background: #00ffff;
+}
+
+.brilho span:nth-child(3n + 1)::before{
+    background: rgb(61, 2, 147);
+    box-shadow: 0 0 20px rgb(76, 0, 255),
+                0 0 40px rgb(76, 0, 255),
+                0 0 60px rgb(76, 0, 255),
+                0 0 80px rgb(76, 0, 255),
+                0 0 0 8px rgba(134,255,0,.1);
+}
+
+.brilho span:nth-child(3n + 2)::before{
+    background: rgb(0, 65, 147);
+    box-shadow: 0 0 20px rgb(0, 81, 255),
+                0 0 40px rgb(0, 81, 255),
+                0 0 60px rgb(0, 81, 255),
+                0 0 80px rgb(0, 81, 255),
+                0 0 0 8px rgba(255,214,0,.1);
+}
+
+.brilho span:nth-child(3n + 3)::before{
+    background: rgb(0, 170, 147);
+    box-shadow: 0 0 20px rgba(0,226,255,1),
+                0 0 40px rgba(0,226,255,1),
+                0 0 60px rgba(0,226,255,1),
+                0 0 80px rgba(0,226,255,1),
+                0 0 0 8px rgba(0,226,255,.1);
+}
+
+.brilho span:nth-child(3n+1){
+    animation: animate 10s alternate infinite;
+}
+
+.brilho span:nth-child(3n+2){
+    animation: animate-reverse 3s alternate infinite;
+}
+
+.brilho span:nth-child(3n+3){
+    animation: animate 8s alternate infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-reverse{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
