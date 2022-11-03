@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+}
+
+a{
+    font-size: 40px;
+    padding: 40px 80px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 3px solid #f0f8ff;
+    color: #f0f8ff;
+    font-family: sans-serif;
+}
+
+a:hover{
+    border: 3px solid #044a79;
+    color: #044a79;
+    animation: snake 0.3s linear 1;
+}
+
+@keyframes snake {
+    33%{transform: rotate(10deg);}
+    66%{transform: rotate(-10deg);}
+    100%{transform: rotate(10deg);}
+}
