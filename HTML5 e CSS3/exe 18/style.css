@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+}
+
+thead{
+    color: #f0f8ff;
+    background-color: #111111;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+td.num{
+    text-align: right;
+}
+
+tr.parse-tr{
+    background-color: #bdbebe;
+}
