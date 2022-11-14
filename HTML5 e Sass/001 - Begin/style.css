@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*VARIÁVEL SASS*/
+/*VARIÁVEL SASS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+}
+
+div.bola1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #00ffff;
+}
+
+div.bola1 a {
+  color: #f0f8ff;
+}
+div.bola1 a:hover {
+  color: #00ffff;
+}
+
+div.bola2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #20b2aa;
+}
+
+div.bola3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #008b8b;
+}/*# sourceMappingURL=style.css.map */

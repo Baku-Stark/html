@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+@mixin flexCenter($justify-content, $flex-direction){
+    display: flex;
+    align-items: center;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include flexCenter(space-between, row);
+    width: 100%;
+    height: 100vh;
+    background-color: #111111;
+}
+
+div.bola1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $primaryColor;
+}
+
+div.bola1 a{
+    color: #f0f8ff;
+    &:hover{
+        color: $primaryColor;
+    }
+}
+
+div.bola2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #20b2aa;
+}
+
+div.bola3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #008b8b;
+}
