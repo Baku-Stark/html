@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas (+ exemplos)</title>
+
+    <style>
+        body{
+            font-family: 'Arial', sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        td.group{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" class="group">Mulheres</td>
+            </tr>
+            <tr>
+                <td>Ana Maria Santos</td>
+                <!--Filmes-->
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <!--Filmes-->
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claúdia Melo</td>
+                <!--Filmes-->
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td rowspan="4" class="group">Homens</td>
+            </tr>
+            <tr>
+                <td>Bruno Mendonça</td>
+                <!--Filmes-->
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <!--Filmes-->
+                <td>Wall-e</td>
+                <td>Old Boy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabricio Mota</td>
+                <!--Filmes-->
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
