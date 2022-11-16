@@ -1,0 +1,38 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+caption, th, td{
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+th{
+    color: #f0f8ff;
+    background-color: #111111;
+}
+
+col.cNome{
+    background-color: aqua;
+}
+
+col.cSexo{
+    background-color: darkcyan;
+}
+
+col.cIdade{
+    background-color: lightskyblue;
+}
+
+col.cProfi{
+    background-color: aquamarine;
+}
