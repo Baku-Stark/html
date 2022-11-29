@@ -1,0 +1,95 @@
+/* CONFIGURAÇÃO GERAL */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    font-size: 14px;
+    color: #444;
+}
+/* CONFIGURAÇÃO GERAL */
+
+/* CONFIGURAÇÃO [navbar] */
+header, .navbar{
+    background-color: #353D41;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 75px;
+}
+
+.navbar-brand{
+    padding: 0;
+    color: #FFF;
+}
+
+.navbar-brand:hover{
+    color: #FFF;
+}
+
+#navbar-links a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+/* CONFIGURAÇÃO [navbar] */
+
+
+/* CONFIGURAÇÃO [carousel] */
+div#carouselExampleCaptions .carousel-inner, div#carouselExampleCaptions .carousel-item{
+    height: 100vh;
+}
+
+div#carouselExampleCaptions .carousel-caption{
+ top: 30%;
+}
+
+div#carouselExampleCaptions .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+div#carouselExampleCaptions .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    color: #f0f8ff;
+}
+
+.carousel-indicators .active{
+    background-color: #65DAF9;
+}
+
+a.main-btn{
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    border: 3px solid transparent;
+    color: #FFF;
+    background-color: #65DAF9;
+}
+a.main-btn:hover{
+    transition: .3s ease-in-out;
+    border: 3px solid #65DAF9;
+    background-color: transparent;
+}
+/* CONFIGURAÇÃO [carousel] */
