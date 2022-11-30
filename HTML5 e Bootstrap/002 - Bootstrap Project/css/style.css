@@ -160,3 +160,21 @@ div.service-box:hover > i, div.service-box:hover > h4{
     color: #65DAF9;
 }
 /* CONFIGURAÇÃO [serviços] */
+
+/* CONFIGURAÇÃO [dados] */
+.circle-box div{
+    padding: 0 40px;
+}
+
+.progressbar-text{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#data-area p{
+    font-size: 26px;
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF;
+}
+/* CONFIGURAÇÃO [dados] */
