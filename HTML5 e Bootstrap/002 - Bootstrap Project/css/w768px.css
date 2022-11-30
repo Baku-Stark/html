@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px){
+    /* CONFIGURAÇÃO [carousel] */
+    div#carouselExampleCaptions .carousel-caption{
+        top: 30%;
+    }
+
+    div#carouselExampleCaptions .carousel-caption h2{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    div#carouselExampleCaptions .carousel-caption p{
+        font-size: 11px;
+        font-weight: 300;
+        color: #f0f8ff;
+    }
+    /* CONFIGURAÇÃO [carousel] */
+}

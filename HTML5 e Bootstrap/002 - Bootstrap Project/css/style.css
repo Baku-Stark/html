@@ -53,10 +53,6 @@ header, nav.navbar{
 
 
 /* CONFIGURAÇÃO [carousel] */
-div#carouselExampleCaptions .carousel-inner, div#carouselExampleCaptions .carousel-item{
-    height: 100vh;
-}
-
 div#carouselExampleCaptions .carousel-caption{
     top: 30%;
 }
