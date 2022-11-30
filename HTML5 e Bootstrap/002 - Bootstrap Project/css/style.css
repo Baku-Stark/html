@@ -18,7 +18,8 @@ p, li{
 /* CONFIGURAÇÃO GERAL */
 
 /* CONFIGURAÇÃO [navbar] */
-header, .navbar{
+header, nav.navbar{
+    padding: 10px;
     background-color: #353D41;
 }
 
@@ -57,7 +58,7 @@ div#carouselExampleCaptions .carousel-inner, div#carouselExampleCaptions .carous
 }
 
 div#carouselExampleCaptions .carousel-caption{
- top: 30%;
+    top: 30%;
 }
 
 div#carouselExampleCaptions .carousel-caption h2{
@@ -93,3 +94,69 @@ a.main-btn:hover{
     background-color: transparent;
 }
 /* CONFIGURAÇÃO [carousel] */
+
+/* CONFIGURAÇÃO [about] */
+div.about-area{
+    background-color: #f9f9f9;
+}
+
+.main-title{
+    font-size: 40px;
+    margin: 0 0 65px 0;
+    text-align: center;
+    color: #444;
+    border-bottom: 3px solid #444;
+}
+
+.main-title::after{
+    content: "";
+    width: 20%;
+}
+
+h3.about-title{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+ul#about-list{
+    padding-left: 0;
+    list-style: none;
+}
+
+ul#about-list li{
+    line-height: 30px;
+}
+
+ul#about-list i{
+    margin-right: 15px;
+    color: #65DAF9;
+}
+/* CONFIGURAÇÃO [about] */
+
+/* CONFIGURAÇÃO [serviços] */
+div.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.service-box i, div.service-box h4{
+    transition: .5s;
+}
+
+div.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+div.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+div.service-box:hover > i, div.service-box:hover > h4{
+    color: #65DAF9;
+}
+/* CONFIGURAÇÃO [serviços] */
