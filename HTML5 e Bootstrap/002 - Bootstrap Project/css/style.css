@@ -46,6 +46,10 @@ header, nav.navbar{
     color: #FFF;
 }
 
+#navbar-links a:hover{
+    color: #a3a3a3;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem .8rem;
 }
