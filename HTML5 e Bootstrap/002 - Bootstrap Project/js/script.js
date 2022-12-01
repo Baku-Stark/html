@@ -80,5 +80,45 @@ $(document).ready(function(){
         /*Parallax - Aply Area*/
         $(`#pattern-img`).parallax({imageSrc: 'img/pattern.png'})
     }, 250)
+
+    /*Filtro [portfolio]*/
+    $(`.filter-btn`).on('click', function(){
+        let type = $(this).attr('id')
+        let boxes = $(`.project-box`)
+        $(`.main-btn`).removeClass('active')
+        $(this).addClass('active')
+
+        if(type == 'all-btn'){
+            eachBoxes('all', boxes)
+        }
+
+        else if(type == 'dev-btn'){
+            eachBoxes('dev', boxes)
+        }
+
+        else if(type == 'dsg-btn'){
+            eachBoxes('dsg', boxes)
+        }
+
+        else if(type == 'seo-btn'){
+            eachBoxes('seo', boxes)
+        }
+    })
+
+    function eachBoxes(type, boxes){
+        if(type == 'all'){
+            $(boxes).fadeIn()
+        }
+        else{
+            $(boxes).each(function(){
+                if(!$(this).hasClass(type)){
+                    $(this).fadeOut('slow')
+                }
+                else{
+                    $(this).fadeIn()
+                }
+            })
+        }
+    }
 })
 /*Progress-bar*/
