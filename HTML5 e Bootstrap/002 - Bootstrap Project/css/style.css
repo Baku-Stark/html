@@ -76,7 +76,7 @@ div#carouselExampleCaptions .carousel-caption p{
     background-color: #65DAF9;
 }
 
-a.main-btn{
+.main-btn{
     width: 200px;
     height: 60px;
     padding: 10px 20px;
@@ -88,10 +88,16 @@ a.main-btn{
     color: #FFF;
     background-color: #65DAF9;
 }
-a.main-btn:hover{
+.main-btn:hover{
+    font-weight: bold;
     transition: .3s ease-in-out;
     border: 3px solid #65DAF9;
+    color: #444;
     background-color: transparent;
+}
+
+a.main-btn:hover{
+    color: #FFF;
 }
 /* CONFIGURAÇÃO [carousel] */
 
@@ -235,3 +241,33 @@ div.service-box:hover > i, div.service-box:hover > h4{
     background-color: #65DAF9;
 }
 /* CONFIGURAÇÃO [trabalhe conosco] */
+
+/* CONFIGURAÇÃO [porfolio] */
+.project-box{
+    margin-bottom: 30px;
+}
+
+#filter-btn-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#portfolio-area .filter-btn{
+    margin: 0 15px;
+    padding: 0 20px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    color: #444;
+    border: 1px solid #444;
+    text-transform: none;
+    background-color: transparent;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+    color: #FFF;
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+}
+/* CONFIGURAÇÃO [porfolio] */
