@@ -62,7 +62,7 @@ div#carouselExampleCaptions .carousel-caption{
 }
 
 div#carouselExampleCaptions .carousel-caption h2{
-    font-size: 50px;
+    font-size: 4.5rem;
     margin-bottom: 30px;
 }
 
@@ -178,3 +178,9 @@ div.service-box:hover > i, div.service-box:hover > h4{
     color: #FFF;
 }
 /* CONFIGURAÇÃO [dados] */
+
+/* CONFIGURAÇÃO [team card] */
+.card-body{
+    text-align: center;
+}
+/* CONFIGURAÇÃO [team card] */

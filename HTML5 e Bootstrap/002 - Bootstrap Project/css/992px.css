@@ -1,7 +1,8 @@
 @media screen and (max-width: 920px) {
     /* CONFIGURAÇÃO [carousel] */
-    div#carouselExampleCaptions .carousel-caption{
-        top: 15%;
+    div#carouselExampleCaptions .carousel-caption h2{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
     }
     /* CONFIGURAÇÃO [carousel] */
 }
