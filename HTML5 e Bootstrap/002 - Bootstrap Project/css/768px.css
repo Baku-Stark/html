@@ -14,5 +14,9 @@
         font-weight: 300;
         color: #f0f8ff;
     }
+
+    div#carouselExampleCaptions .carousel-inner{
+        margin-top: 11vh;
+    }
     /* CONFIGURAÇÃO [carousel] */
 }

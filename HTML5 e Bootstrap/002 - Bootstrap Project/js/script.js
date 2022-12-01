@@ -61,7 +61,7 @@ $(document).ready(function(){
             circle.setText(value)
         }
     })
-    /*Iniciando o loarde quando o usuário chegar na sessão*/ 
+    /*Iniciando o loarder quando o usuário chegar na sessão*/ 
     let dataAreaOffset = $(`#data-area`).offset()
     let stop = 0
     $(window).scroll(function(e){
@@ -77,6 +77,8 @@ $(document).ready(function(){
     /*Parallax*/
     setTimeout(function(){
         $(`#data-area`).parallax({imageSrc: 'img/cidadeparallax.png'})
+        /*Parallax - Aply Area*/
+        $(`#pattern-img`).parallax({imageSrc: 'img/pattern.png'})
     }, 250)
 })
 /*Progress-bar*/
