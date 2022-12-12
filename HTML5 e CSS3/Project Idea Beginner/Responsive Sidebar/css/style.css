@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 140vh;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.sidebar{
+    width: 120px;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: #0a0a0aa6;
+    box-shadow: 0 8px 32px #020418;
+    border-right: 2px solid #ffffff17;
+    transition: .4s ease-in-out;
+}
+
+div.sidebar.open{
+    width: 360px;
+}
+
+div.sidebar .toggle{
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    top: 180px;
+    right: -20px;
+    font-size: 38px;
+    line-height: 50%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px 0 2px 2px;
+    background: linear-gradient(
+        90deg,
+        transparent 50%,
+        rgba(10, 10, 10, .65) 50%
+    );
+}
+
+div.sidebar.open .toggle{
+    transform: translateY(45px);
+}
+
+div.sidebar .toggle i{
+    transition: .4s linear;
+}
+
+div.sidebar.open .toggle i{
+    transform: rotateY(180deg);
+}
+
+div.sidebar div.logo{
+    width: 100%;
+    height: 240px;
+    padding: 40px 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+div.sidebar div.logo img{
+    width: 56px;
+    transition: .4s;
+}
+
+div.sidebar.open div.logo img{
+    width: 96px;
+}
+
+div.sidebar div.logo h3{
+    scale: 0;
+    opacity: 0;
+    font-size: 36px;
+    margin-top: 12px;
+    pointer-events: none;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+div.sidebar.open div.logo h3{
+    scale: 1;
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+div.sidebar .nav-title{
+    opacity: #dadada;
+    margin: 40px 0 18px;
+    pointer-events: none;
+    color: #dadada;
+}
+
+div.sidebar.open .nav-title{
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+div.sidebar nav{
+    padding: 0 30px;
+}
+
+div.sidebar nav .nav-item{
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    transition: .3s;
+}
+
+div.sidebar nav .nav-item.active{
+    background: #ff328e !important;
+}
+
+div.sidebar nav .nav-item:hover{
+    background: #ffffff1a;
+}
+
+div.sidebar nav .nav-item i{
+    font-size: 26px;
+}
+
+div.sidebar nav .nav-item span{
+    opacity: 0;
+    font-size: 18px;
+    margin-left: 8px;
+    pointer-events: none;
+}
+
+.sidebar.open nav .nav-item span{
+    opacity: 1;
+    transition: .4s;
+    transition-duration: .2s;
+    pointer-events: visible;
+}
+
+div.sidebar hr{
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    margin: 40px 0 50px;
+    background-color: #ffffff1a;
+    opacity: 0;
+}
+
+div.sidebar.open hr{
+    opacity: 1;
+    transition: .4s;
+}
