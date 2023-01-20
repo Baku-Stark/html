@@ -1,6 +1,8 @@
 /* Smartphone em pé */
 @charset "UTF-8";
 
-body{
-    background-color: #9acd32;
+@media (orientation: portrait){
+    body{
+        background-color: #9acd32;
+    }
 }
