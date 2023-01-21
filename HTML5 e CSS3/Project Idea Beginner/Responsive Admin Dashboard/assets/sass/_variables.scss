@@ -1,0 +1,5 @@
+@mixin displayFlex_Pattern($content, $content_2){
+    display: flex;
+    align-items: $content;
+    justify-content: $content_2;
+}

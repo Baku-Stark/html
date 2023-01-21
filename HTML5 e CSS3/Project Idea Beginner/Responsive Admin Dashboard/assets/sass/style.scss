@@ -1,9 +1,12 @@
 /*ROOT [VARIABLS]*/ 
+@import 'variables.scss';
+
 :root{
     --color-white: #ffffff;
     --color-light: #f0eff5;
-    --color-gray-light: #56555e;
-    --color-gray-dark: #27282f;
+    --color-dark: #27282f;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
 
     --color-primary: #4707ea;
     --color-success: #22ca4b;
@@ -95,4 +98,83 @@ small{
     background: #27282f;
     box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
 }
-/*========================= NAV BAR =========================*/ 
+/*========================= NAV BAR =========================*/
+nav{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--color-white);
+    div.container{
+        width: 96%;
+        margin: 0 auto;
+        position: relative;
+        @include displayFlex_Pattern(center, space-between);
+    }
+    img.logo{
+        width: 7rem;
+    }
+
+    div.search-bar{
+        gap: 1rem;
+        left: 15%;
+        width: 32vw;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        color: var(--color-gray-light);
+        background-color: var(--color-light);
+        border-radius: var(--border-radius-2);
+        padding: var(--padding-2) var(--card-padding);
+
+        input[type = "search"]{
+            width: 100%;
+            background: transparent;
+            color: var(--color-dark);
+            &::placeholder{
+                color: var(--color-gray-dark);
+            }
+        }
+    }
+
+    div.profile-area{
+        gap: 4rem;
+        @include displayFlex_Pattern(center, space-between);
+
+        div.theme-btn{
+            width: 5rem;
+            height: 2rem;
+            display: flex;
+            cursor: pointer;
+            background: var(--color-light);
+            border-radius: var(--border-radius-2);
+
+            span{
+                width: 50%;
+                height: 100%;
+                font-size: 1.3rem;
+                @include displayFlex_Pattern(center, center);
+            }
+            .active{
+                color: var(--color-white);
+                background: var(--color-dark);
+                border-radius: var(--border-radius-2);
+            }
+        }
+
+        div.profile{
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            
+            div.profile-photo{
+            width: 3rem;
+            height: 3rem;
+            overflow: hidden;
+            border-radius: 50%;
+            }
+        }
+
+        button#menu-btn{
+            display: none;
+        }
+    }
+}
