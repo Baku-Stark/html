@@ -1,5 +1,41 @@
+:root{
+    --color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-dark: #27282f;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+
+    --color-primary: #4707ea;
+    --color-success: #22ca4b;
+    --color-danger: #ff4336;
+    --color-warning: #eab507;
+    --color-purple: #a063f5;
+
+    --color-primary-light: #4707ea33;
+    --color-success-light: #22ca4b33;
+    --color-danger-light: #ff433633;
+    --color-purple-light: #a863f533;
+
+    --card-padding: 1.6rem;
+    --padding-1: 1rem;
+    --padding-2: 6px;
+
+    --card-border-radius: 1.6rem;
+    --border-radius-1: 1rem;
+    --border-radius-2: 6px;
+}
+
+$tran-pattern-200: all 200ms ease;
+$tran-pattern-300: all 300ms ease;
+
 @mixin displayFlex_Pattern($content, $content_2){
     display: flex;
     align-items: $content;
+    justify-content: $content_2;
+}
+
+@mixin display_Pattern_Sec($content, $content_2){
+    display: flex;
+    flex-direction: $content;
     justify-content: $content_2;
 }

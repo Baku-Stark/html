@@ -51,11 +51,11 @@
     <!-- END OF NAVBAR -->
     <main>
         <aside>
-            <button>
+            <button id="close-btn">
                 <span class="material-symbols-sharp">close</span>
             </button>
             <div class="sidebar">
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-symbols-sharp">dashboard</span>
                     <h4>Dashboard</h4>
                 </a>
@@ -93,13 +93,120 @@
             <div class="updates">
                 <span class="material-symbols-sharp">update</span>
                 <h4>Updates Available</h4>
-                <small>Security Updates</small>
+                <p>Security Updates</p>
+                <p>General Updates</p>
                 <a href="#">Update Now</a>
             </div>
         </aside>
         <!-- END OF ASIDE -->
 
-        <section class="middle"></section>
+        <section class="middle">
+            <div class="header">
+                <h1>Overview</h1>
+                <input type="date" id="calendar">
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="assets/images/BTC.png" alt="BTC">
+                            <h2>BTC</h2>
+                        </div>
+                        <img src="assets/images/visa.png" alt="VISA" class="right">
+                    </div>
+
+                    <div class="middle">
+                        <h1>$827,199</h1>
+                        <img src="assets/images/card chip.png" alt="card_chip" class="chip">
+                    </div>
+
+                    <div class="bottom">
+                        <div class="left">
+                           <small>Card Helper</small>
+                           <h5>JOHN DOE</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD [1]-->
+
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="assets/images/ETH.png" alt="ETH">
+                            <h2>ETH</h2>
+                        </div>
+                        <img src="assets/images/master card.png" alt="MASTER CARD" class="right">
+                    </div>
+                    <div class="middle">
+                        <h1>$95,623</h1>
+                        <img src="assets/images/card chip.png" alt="card_chip" class="chip">
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                           <small>Card Helper</small>
+                           <h5>JOHN DOE</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/23</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD [2]-->
+
+                <div class="card">
+                    <div class="top">
+                        <div class="left">
+                            <img src="assets/images/BTC.png" alt="BTC">
+                            <h2>BTC</h2>
+                        </div>
+                        <img src="assets/images/visa.png" alt="VISA" class="right">
+                    </div>
+                    <div class="middle">
+                        <h1>$74,384</h1>
+                        <img src="assets/images/card chip.png" alt="card_chip" class="chip">
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                           <small>Card Helper</small>
+                           <h5>JOHN DOE</h5>
+                        </div>
+                        <div class="right">
+                            <div class="expiry">
+                                <small>Expiry</small>
+                                <h5>08/24</h5>
+                            </div>
+                            <div class="cvv">
+                                <small>CVV</small>
+                                <h5>123</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD [3]-->
+            </div>
+            <!-- END OF CARDS -->
+
+            <div class="montly-report"></div>
+            <!-- END OF MONTLY REPORT -->
+        </section>
         <!-- END OF MIDDLE -->
 
         <section class="right"></section>

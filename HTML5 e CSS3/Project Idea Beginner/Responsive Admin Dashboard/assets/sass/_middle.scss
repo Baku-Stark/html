@@ -1,0 +1,89 @@
+main section.middle{
+    div.header{
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+
+        input#calendar{
+            padding: 0.5rem 2rem;
+            color: var(--color-gray-dark);
+            background: var(--color-white);
+            border-radius: var(--border-radius-2);
+        }
+    }
+
+    div.cards{
+        gap: 1.5rem;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        div.card{
+            height: 16rem;
+            color: #ffffff;
+            transition: $tran-pattern-300;
+            padding: var(--card-padding);
+            box-shadow: 0 2rem 3rem var(--color-danger-light);
+            border-radius: var(--card-border-radius);
+            background: linear-gradient(#ff796f, #bd261b);
+            @include display_Pattern_Sec(column, space-between);
+
+            &:nth-child(2){
+                box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+                background: linear-gradient(#7f8191, #27282f);
+            }
+            &:nth-child(3){
+                box-shadow: 0 2rem 3rem var(--color-primary-light);
+                background: linear-gradient(#5d78ff, #5719c2);
+            }
+            &:hover{
+                box-shadow: none;
+                transition: $tran-pattern-300;
+            }
+
+            div.top{
+                @include displayFlex_Pattern(center, space-between);
+
+                div.left{
+                    gap: 0.5rem;
+                    display: flex;
+
+                    h2{
+                        font-weight: 200;
+                        font-size: 1.4rem;
+                    }
+
+                    img{
+                        width: 2.3rem;
+                        height: 2.3rem;
+                        padding: 0.4rem;
+                        border: 1px solid #ffffff;
+                        border-radius: var(--border-radius-2);
+                    }
+                }
+
+                img.right{
+                    width: 3.5rem;
+                }
+            }
+
+            div.middle{
+                display: flex;
+                justify-content: space-between;
+
+                img.chip{
+                    width: 3.5rem;
+                }
+            }
+
+            div.bottom{
+                @include displayFlex_Pattern(flex-end, space-between);
+
+                div.right{
+                    gap: 2rem;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
