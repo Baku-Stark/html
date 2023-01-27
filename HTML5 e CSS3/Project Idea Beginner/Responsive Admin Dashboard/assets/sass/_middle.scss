@@ -86,4 +86,72 @@ main section.middle{
             }
         }
     }
+    /*========================= END OF CARDS =========================*/
+
+    div.montly-report{
+        gap: 1rem;
+        margin-top: 2rem;
+        justify-content: space-between;
+        @include displayGrid_Pattern(repeat(4, 1fr));
+    }
+    /*========================= END OF MOSTLY-REPORT =========================*/
+
+    div.fast-payment{
+        gap: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+
+        div.badges{
+            gap: 1rem;
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            align-self: center;
+
+            div.badge{
+                gap: 1rem;
+                display: flex;
+                align-items: center;
+                transition: $tran-pattern-300;
+                background: var(--color-white);
+                padding: 0.6rem var(--card-padding);
+                border-radius: var(--border-radius-2);
+
+                span{
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                }
+
+                div{
+                    gap: 2rem;
+                    display: flex;
+                    align-self: center;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0 0 1.5rem var(--color-primary-light);
+                }
+
+                &:nth-child(1) span{
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    height: fit-content;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    /*========================= END OF FAST-PAYMENT =========================*/
+
+    canvas#chart{
+        max-width: 100%;
+        margin-top: 2rem;
+        padding: var(--card-padding);
+        background: var(--color-white);
+        border-radius: var(--card-border-radius);
+    }
 }

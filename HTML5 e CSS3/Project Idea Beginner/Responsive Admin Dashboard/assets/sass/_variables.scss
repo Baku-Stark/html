@@ -39,3 +39,8 @@ $tran-pattern-300: all 300ms ease;
     flex-direction: $content;
     justify-content: $content_2;
 }
+
+@mixin displayGrid_Pattern($content){
+    display: grid;
+    grid-template-columns: $content;
+}
