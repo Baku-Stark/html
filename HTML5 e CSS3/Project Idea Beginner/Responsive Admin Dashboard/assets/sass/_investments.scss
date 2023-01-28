@@ -1,0 +1,31 @@
+section.right > div.investments{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+
+    div.header{
+        padding: var(--card-padding);
+        padding-bottom: 0;
+        @include displayFlex_Pattern(center, space-between);
+
+        a{
+            display: flex;
+            align-items: center;
+            color: var(--color-primary);
+        }
+    }
+
+    div.investment{
+        padding: var(--card-padding);
+        border-bottom: 1px solid var(--color-light);
+        transition: $tran-pattern-300;
+        @include displayFlex_Pattern(center, space-between);
+
+        img{width: 2.4rem;}
+
+        &:hover{
+            cursor: pointer;background: var(--color-light);
+        }
+        
+        &:last-child{border: none;}
+    }
+}
