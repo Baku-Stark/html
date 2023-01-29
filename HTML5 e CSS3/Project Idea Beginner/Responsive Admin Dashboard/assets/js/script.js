@@ -24,3 +24,32 @@ new Chart(ctx, {
         responsive: true
     }
 })
+
+// ===== ASIDE FUNCTION =====
+document.querySelector('#menu-btn').addEventListener('click', () => {
+    document.querySelector('aside').style.display = 'block'
+})
+
+document.querySelector('#close-btn').addEventListener('click', () => {
+    document.querySelector('aside').style.display = 'none'
+})
+
+// ===== THEME FUNCTION =====
+const themeBtn = document.querySelector('.theme-btn')
+
+
+themeBtn.addEventListener('click', () => {
+    if(document.querySelector('body').classList.value === ""){
+        document.querySelector('body').classList.add('dark-mode')
+
+        document.querySelector('.light-theme-btn').classList.remove('active')
+        document.querySelector('.dark-theme-btn').classList.add('active')
+    }
+
+    else{
+        document.querySelector('body').classList.remove('dark-mode')
+
+        document.querySelector('.light-theme-btn').classList.add('active')
+        document.querySelector('.dark-theme-btn').classList.remove('active')
+    }
+})

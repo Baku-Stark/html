@@ -1,5 +1,5 @@
 /*ROOT [VARIABLS]*/ 
-@import 'variables.scss', 'middle.scss', 'investments.scss';
+@import 'variables.scss', 'middle.scss', 'investments.scss', 'transactions.scss';
 
 *{
     margin: 0;
@@ -17,6 +17,7 @@ html{font-size: 12px;}
 body{
     min-height: 100vh;
     font-family: poppins, sans-serif;
+    transition: $tran-pattern-300;
     color: var(--color-dark);
     background-color: var(--color-light);
 }
@@ -110,6 +111,9 @@ nav{
         background-color: var(--color-light);
         border-radius: var(--border-radius-2);
         padding: var(--padding-2) var(--card-padding);
+        @include screenTablets{
+            display: none;
+        }
 
         input[type = "search"]{
             width: 100%;
@@ -124,6 +128,12 @@ nav{
     div.profile-area{
         gap: 4rem;
         @include displayFlex_Pattern(center, space-between);
+        @include screenTablets{
+            gap: 2rem;
+        }
+        @include screenPhones{
+            gap: 2.6rem;
+        }
 
         div.theme-btn{
             width: 5rem;
@@ -132,6 +142,11 @@ nav{
             cursor: pointer;
             background: var(--color-light);
             border-radius: var(--border-radius-2);
+            @include screenTablets{
+                display: inline-flex;
+                background: transparent;
+                color: var(--color-dark);
+            }
 
             span{
                 width: 50%;
@@ -150,6 +165,12 @@ nav{
             gap: 1rem;
             display: flex;
             align-items: center;
+
+            @include screenPhones{
+                h5, span{
+                    display: none;
+                }
+            }
             
             div.profile-photo{
             width: 3rem;
@@ -161,6 +182,9 @@ nav{
 
         button#menu-btn{
             display: none;
+            @include screenTablets{
+                display: block;
+            }
         }
     }
 }
@@ -172,17 +196,56 @@ main{
     width: 96%;
     margin: 1rem auto 4rem;
     grid-template-columns: 16rem auto 30rem;
+    @include screenTablets{
+        grid-template-columns: 1fr;
+    }
 
     // Mostrado apenas em celulares e tablets.
     button#close-btn{
         display: none;
     }
 
+    @keyframes showSidebar{
+        to{left: 0;}
+    }
+
     aside{
         height: 88vh;
         @include display_Pattern_Sec(column, space-between);
+        @include screenTablets{
+            top: 0;
+            left: -100%;
+            z-index: 3;
+            width: 22rem;
+            height: 100vh;
+            position: fixed;
+            background: var(--color-white);
+            box-shadow: 2rem 0 2rem var(--color-purple-light);
+            display: none;
+            animation: showSidebar 500ms ease forwards;
+            
+            button#close-btn{
+                top: 1rem;
+                right: 1rem;
+                z-index: 4;
+                width: 3rem;
+                height: 3rem;
+                position: absolute;
+                display: inline-block;
+                color: var(--color-dark);
+                background-color: transparent;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
 
         div.sidebar{
+            @include screenTablets{
+                margin-top: 4rem;
+            }
+
             a{
                 gap: 1.2rem;
                 height: 4.2rem;
@@ -227,6 +290,10 @@ main{
             padding: var(--card-padding);
             background: var(--color-white);
             border-radius: var(--border-radius-1);
+
+            @include screenTablets{
+                display: none;
+            }
 
             a{
                 width: 100%;

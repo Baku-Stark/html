@@ -1,0 +1,56 @@
+div.recent-transactions{
+    margin-top: 2rem;
+    @include screenTablets{
+        margin-top: 3rem;
+    }
+
+    div.header{
+        @include displayFlex_Pattern(center, space-between);
+
+        a{
+            display: flex;
+            align-items: center;
+            color: var(--color-primary);
+        }
+    }
+
+    div.transaction{
+        padding: 1.5rem var(--card-padding);
+        border-radius: var(--card-border-radius);
+        transition: $tran-pattern-300;
+        @include displayFlex_Pattern(center, space-between);
+
+        div.service{
+            gap: 1rem;
+            display: flex;
+            div.icon{
+                display: flex;
+                align-items: center;
+                padding: var(--padding-2);
+                border-radius: var(--card-border-radius-1);
+            }
+        }
+
+        div.card-details{
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+
+            div.card{
+                width: 4.6rem;
+                height: 3rem;
+                border-radius: var(--card-border-radius-2);
+                @include displayFlex_Pattern(center, center);
+
+                img{
+                    width: 2.2rem;
+                }
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+            background: var(--color-white);
+        }
+    }
+}

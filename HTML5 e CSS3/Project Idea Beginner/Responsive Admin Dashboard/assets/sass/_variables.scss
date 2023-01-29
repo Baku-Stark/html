@@ -25,6 +25,13 @@
     --border-radius-2: 6px;
 }
 
+.dark-mode{
+    --color-white: #131316;
+    --color-light: #23232a;
+    --color-dark: #ddd;
+    --color-gray-dark: #adacb5;
+}
+
 $tran-pattern-200: all 200ms ease;
 $tran-pattern-300: all 300ms ease;
 
@@ -43,4 +50,16 @@ $tran-pattern-300: all 300ms ease;
 @mixin displayGrid_Pattern($content){
     display: grid;
     grid-template-columns: $content;
+}
+
+@mixin screenTablets{
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin screenPhones{
+    @media screen and (max-width: 600px) {
+        @content;
+    }
 }

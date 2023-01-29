@@ -23,7 +23,8 @@ section.right > div.investments{
         img{width: 2.4rem;}
 
         &:hover{
-            cursor: pointer;background: var(--color-light);
+            cursor: pointer;
+            background: var(--color-light);
         }
         
         &:last-child{border: none;}
