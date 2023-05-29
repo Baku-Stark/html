@@ -1,0 +1,12 @@
+@tailwind base;
+
+.btn{
+    @apply flex-shrink-0 bg-teal-500 outline-none py-2 px-4 ml-4 text-white font-semibold rounded-md;
+}
+
+.btn:hover{
+    @apply bg-teal-600;
+}
+
+@tailwind components;
+@tailwind utilities;
