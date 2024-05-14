@@ -1,0 +1,17 @@
+{
+  "name": "card-projects",
+  "version": "1.0.0",
+  "description": "card project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/styles/styles.scss:assets/styles/styles.css"
+  },
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Baku-Stark",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.1"
+  }
+}
